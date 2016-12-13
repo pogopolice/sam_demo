@@ -7,7 +7,8 @@ phases:
       - aws cloudformation package \
          --template-file samTemplate.yaml \
          --s3-bucket iti-products \
-         --output-template-file NewSamTemplate.yaml
+         --output-template-file NewSamTemplate.yaml \
+         --capabilities CAPABILITY_IAM
 artifacts:
   type: zip
   files:
