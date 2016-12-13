@@ -5,7 +5,7 @@ phases:
     commands:
       - npm install time
       - aws cloudformation package \
-         --template-file SAM_template.yaml \
+         --template-file samTemplate.yaml \
          --s3-bucket iti-products \
          --output-template-file NewSamTemplate.yaml
 artifacts:
